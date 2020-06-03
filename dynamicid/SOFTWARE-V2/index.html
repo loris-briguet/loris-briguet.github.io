@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Creator SEM</title>
+  <style>
+    html, body {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    body {
+      background: rgba(220,220, 220);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    canvas {
+      box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.21);
+      width: 60vmin !important;
+      height: auto !important;
+
+    }
+
+    svg {
+      display: none;
+    }
+
+  </style>
+  <script src="assets/p5.min.js"></script>
+  <script src="assets/p5.dom.min.js"></script>
+  <script src="assets/p5.sound.min.js"></script>
+  <script src="assets/dat.gui.min.js"></script>
+  <script charset="UTF-8" src="assets/letter.js"></script>
+  <script charset="UTF-8" src="assets/agendaEvent.js"></script>
+
+  <script charset="UTF-8" src="main.js"></script>
+</head>
+
+<body>
+  <svg>
+    <defs>
+      
+      <filter id="colormatrix">
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="matrix" />
+
+        <feColorMatrix in="matrix" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.9 0" result="matrix2" />
+
+        <feComposite in="SourceGraphic" in2="matrix2" operator="atop"/>
+      </filter>
+
+      <filter id="blur">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feComposite in="SourceGraphic" in2="matrix" operator="atop"/>
+      </filter>
+
+      <filter id="blur-logo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />
+        <feComposite in="SourceGraphic" in2="matrix" operator="atop"/>
+      </filter>
+
+      <filter id="colormatrix-logo">
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -9" result="matrix" />
+        <feComposite in="SourceGraphic" in2="matrix" operator="atop"/>
+      </filter>
+    </defs>
+  </svg>
+  
+</body>
+
+</html>

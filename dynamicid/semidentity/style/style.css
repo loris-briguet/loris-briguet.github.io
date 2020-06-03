@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Space_Mono';
+    src: url('../assets/font/SpaceMono-Bold.ttf') format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    background-color: #430CE8 ;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    height: 100%;
+    
+    font-family: 'Space_Mono';
+
+    --textColor: rgb(220, 220, 220);
+}
+
+.hidecursor {
+    cursor: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*background: lime;*/
+    display: flex;
+    justify-content: flex-end;
+    /*dis*/
+}
+
+.program-cell {
+    position: relative;
+    width: auto;
+    font-size: 2em;
+    color: var(--textColor);
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    line-height: normal;
+    position: relative;
+    width: auto;
+    font-size: 2em;
+    color: var(--textColor);
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutInfos {
+    line-height: normal;
+    position: relative;
+    width: auto;
+    font-size: 2em;
+    color: var(--textColor);
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.program-cell>div {
+    position: relative;
+    flex: 0 0 auto;
+    padding: 0 1ch 0 1ch;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+/* .program-cell>.artist:hover {
+    text-decoration: underline;
+} */
+
+.program-cell>.artist {
+    width: 23ch;
+}
+
+.program-cell>.date {
+    width: 12ch;
+}
+
+.program-cell>.country {
+    margin-right: 10ch;
+    width: 8ch;
+}
+
+.program-container {
+    width: 100%;
+    height: 100px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: scroll hidden;
+}
+
+#main-canvas-container {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#main-canvas-container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*.event{
+    z-index: 100 !important;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    z-index: 1000000;
+    padding-left: 250px;
+
+}*/
+
+.menuItem a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.menuItem a:hover {
+    text-decoration: underline;
+}
+
+.menuItem{
+    margin-left: 1em;
+    font-family: Space_Mono;
+    font-size: 3.5em;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.templates {
+    display: none;
+}
