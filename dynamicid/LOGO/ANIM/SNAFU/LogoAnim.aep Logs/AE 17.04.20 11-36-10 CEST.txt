@@ -1,1 +1,0 @@
-  17.04.20 11:36:10 CEST: Starting composition “LogoAnimSoft”.  Output To: /Users/loris.briguet/Documents/ECAL/ECAL_S2/05_DynamicDisplay/SEMidentity/LOGO/STILL/LogoStillAcc1.psd    17.04.20 11:36:10 CEST: Finished composition “LogoAnimSoft”.  Total Time Elapsed: 0 SecondsLog closed on 17.04.20 at 11:36:10 CEST

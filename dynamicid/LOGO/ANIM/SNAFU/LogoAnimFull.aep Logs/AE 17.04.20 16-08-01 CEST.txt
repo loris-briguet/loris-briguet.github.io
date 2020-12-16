@@ -1,1 +1,0 @@
-  17.04.20 16:08:01 CEST: Starting composition “LogoAnim”.  Output To: /Users/loris.briguet/Documents/ECAL/ECAL_S2/05_DynamicDisplay/SEMidentity/LOGO/STILL/LogoAnim (0-00-11-22).psd    17.04.20 16:08:01 CEST: Finished composition “LogoAnim”.  Total Time Elapsed: 0 SecondsLog closed on 17.04.20 at 16:08:01 CEST
