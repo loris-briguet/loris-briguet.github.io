@@ -3,10 +3,10 @@
 
 ## semester 1
 - [creative coding](https://loris-briguet.github.io/Ecal/s1/CreativeCoding/index.html)
-- [dynamic display](https://loris-briguet.github.io/Ecal/s1/DynamicDisplay)
+- [dynamic display](https://loris-briguet.github.io/Ecal/s1/DynamicDisplay/README.md)
 -  [workshop 1](https://loris-briguet.github.io/Ecal/s1/SemaineBloc/01_satisfaction/index.html)
 - [workshop 2](https://loris-briguet.github.io/Ecal/s1/SemaineBloc/03_danceCycle/index.html)
 
 ## semsester 2
 - [creative coding](https://loris-briguet.github.io/Ecal/s2/CreativeCoding/index.html)
-- [dynamic display](https://loris-briguet.github.io/Ecal/s2/DynamicDisplay)
+- [dynamic display](https://loris-briguet.github.io/Ecal/s2/DynamicDisplay/README.md)
