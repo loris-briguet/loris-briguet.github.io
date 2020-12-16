@@ -1,0 +1,312 @@
+/* //////////////////// Grid //////////////////// */
+#state6 .c25 {
+  z-index: 1;
+  position: absolute;
+  top: 66.666%;
+  left: 75%;
+  width: calc(25% - 20px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease, width 1s ease;
+}
+
+#state7 .c25 {
+  z-index: 1;
+  position: absolute;
+  top: 66.666%;
+  left: 25%;
+  width: calc(75% - 20px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease, width 1s ease;
+}
+
+.c25 {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  width: calc(25% - 20px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease, width 1s ease;
+}
+
+#state6 .c26 {
+  position: absolute;
+  top: 66.666%;
+  left: calc(25% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease, width 1s ease;
+}
+
+#state1 .c26,
+#state2 .c26,
+#state3 .c26,
+#state4 .c26,
+#state5 .c26 {
+  position: absolute;
+  top: 100%;
+  left: calc(25% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease, width 1s ease;
+}
+
+.c26 {
+  position: absolute;
+  top: 66.666%;
+  left: calc(-25% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease, width 1s ease;
+}
+
+#state6 .c27 {
+  position: absolute;
+  top: 66.666%;
+  left: calc(50% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease, width 1s ease;
+}
+
+#state1 .c27,
+#state2 .c27,
+#state3 .c27,
+#state4 .c27,
+#state5 .c27 {
+  position: absolute;
+  top: 100%;
+  left: calc(50% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease, width 1s ease;
+}
+
+.c27 {
+  position: absolute;
+  top: 66.666%;
+  left: calc(0% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease, width 1s ease;
+}
+
+#state6 .c28 {
+  position: absolute;
+  top: 83.222%;
+  left: calc(25% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease, width 1s ease;
+}
+
+#state1 .c28,
+#state2 .c28,
+#state3 .c28,
+#state4 .c28,
+#state5 .c28 {
+  position: absolute;
+  top: 116.666%;
+  left: calc(25% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease, width 1s ease;
+}
+
+.c28 {
+  position: absolute;
+  top: 83.222%;
+  left: calc(-25% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease, width 1s ease;
+}
+
+#state6 .c29 {
+  position: absolute;
+  top: 83.222%;
+  left: calc(50% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease, width 1s ease;
+}
+
+#state1 .c29,
+#state2 .c29,
+#state3 .c29,
+#state4 .c29,
+#state5 .c29 {
+  position: absolute;
+  top: 116.666%;
+  left: calc(50% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease, width 1s ease;
+}
+
+.c29 {
+  position: absolute;
+  top: 83.222%;
+  left: calc(0% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: rgb(255, 0, 0);
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease, width 1s ease;
+}
+
+/* //////////////////// Style //////////////////// */
+
+@keyframes sauceAnim {
+  0% {
+    filter: blur(30px);
+    /* transform: translate(-50%, -50%) skew(0deg) scale(1, 1); */
+    stroke-width: 0px;
+    font-variation-settings: "wght" 100, "wdth" 20;
+    -webkit-text-stroke-color: white;
+  }
+
+  10% {
+    filter: blur(30px);
+  }
+
+  50% {
+    filter: blur(00px);
+    -webkit-text-stroke-color: white;
+    font-variation-settings: "wght" 800, "wdth" 90;
+    font-size: 22vw;
+  }
+
+  90% {
+    filter: blur(30px);
+  }
+
+  100% {
+    filter: blur(30px);
+    /* transform: translate(-50%, -50%) scale(1, 1); */
+    stroke-width: 0px;
+    -webkit-text-stroke-color: white;
+    font-variation-settings: "wght" 100, "wdth" 20;
+  }
+}
+
+.sauce {
+  z-index: 10;
+  float: right;
+  text-align: center;
+  position: absolute;
+  padding-left: 2%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: auto;
+  font-family: circular;
+  font-variation-settings: "wght" 2000, "wdth" 80;
+  font-size: 22vw;
+  letter-spacing: 0vw;
+  top: 52%;
+  left: 50%;
+
+  animation-name: sauceAnim;
+
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.s1 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 50;
+  top: 53%;
+  left: 50%;
+  transition: filter 0.3s ease-in;
+}
+.s2 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 40;
+  top: 53%;
+  left: 50%;
+  transition: filter 0.3s ease-in;
+}
+
+.s3 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 10;
+  top: 53%;
+  left: 50%;
+  transition: filter 0.3s ease-in;
+  hyphens: none;
+}
+
+.s4 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 20;
+  top: 53%;
+  left: 50%;
+  transition: filter 0.3s ease-in;
+  hyphens: none;
+}

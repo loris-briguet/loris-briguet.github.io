@@ -1,0 +1,68 @@
+/* //////////////////// Grid //////////////////// */
+
+#state1 .c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: red;
+  border: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease;
+}
+
+.c1 {
+  position: absolute;
+  top: calc(-100vh - 20px);
+  left: 0;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: red;
+  opacity: 100%;
+  transition: top 1s ease;
+}
+
+/* //////////////////// Style //////////////////// */
+
+@keyframes tacosAnim {
+  0% {
+    filter: blur(0px);
+  }
+
+  50% {
+    filter: blur(20px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.tacos {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.tacosTitle {
+  font-family: circular;
+  font-size: 10vw;
+  text-align: center;
+  font-variation-settings: "wght" 800, "wdth" 110;
+  animation-name: tacosAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.tacosText {
+  padding-left: 30%;
+  padding-right: 30%;
+  margin: 0;
+  width: auto;
+  font-family: circular;
+  font-size: 1.2vw;
+  text-align: justify;
+}

@@ -1,0 +1,508 @@
+/* //////////////////// Grid //////////////////// */
+#state5 .c18,
+#state6 .c18,
+#state7 .c18 {
+  z-index: 1;
+  position: absolute;
+  top: 33.333%;
+  left: 25%;
+  width: calc(50% - 0px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease, width 1s ease;
+}
+
+.c18 {
+  z-index: 1;
+  position: absolute;
+  top: 33.333%;
+  left: -25%;
+  width: calc(50% - 0px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 0%;
+  transition: top 1s ease, left 1s ease, width 1s ease;
+}
+
+#state5 .c19 {
+  position: absolute;
+  top: 66.666%;
+  left: 25%;
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state2 .c19,
+#state3 .c19,
+#state4 .c19,
+#state1 .c19 {
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.2s, width 1s ease;
+}
+
+.c19 {
+  position: absolute;
+  top: 33%;
+  left: 25%;
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state5 .c20 {
+  position: absolute;
+  top: 66.666%;
+  left: calc(50% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state2 .c20,
+#state3 .c20,
+#state4 .c20,
+#state1 .c20 {
+  position: absolute;
+  top: 100%;
+  left: calc(50% + 10px);
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.2s, width 1s ease;
+}
+
+.c20 {
+  position: absolute;
+  top: 33%;
+  left: calc(50% + 10px);
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state5 .c21 {
+  position: absolute;
+  top: 83.33333%;
+  left: 25%;
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state2 .c21,
+#state3 .c21,
+#state4 .c21,
+#state1 .c21 {
+  position: absolute;
+  top: 116.666%;
+  left: 25%;
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.2s, width 1s ease;
+}
+
+.c21 {
+  position: absolute;
+  top: 49.999%;
+  left: 25%;
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state5 .c22 {
+  position: absolute;
+  top: 83.33333%;
+  left: calc(50% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state2 .c22,
+#state3 .c22,
+#state4 .c22,
+#state1 .c22 {
+  position: absolute;
+  top: 116.666%;
+  left: calc(50% + 10px);
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.2s, width 1s ease;
+}
+
+.c22 {
+  position: absolute;
+  top: 49.999%;
+  left: calc(50% + 10px);
+  width: calc(25% - 10px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state5 .c23 {
+  position: absolute;
+  top: 66.666%;
+  left: calc(75% + 10px);
+  width: calc(25% - 20px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+#state2 .c23,
+#state3 .c23,
+#state4 .c23,
+#state1 .c23 {
+  position: absolute;
+  top: 100%;
+  left: calc(75% + 10px);
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+.c23 {
+  position: absolute;
+  top: 33.333%;
+  left: calc(75% + 10px);
+  width: calc(25% - 20px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+#state5 .c24 {
+  position: absolute;
+  top: 83.33333%;
+  left: calc(75% + 10px);
+  width: calc(25% - 20px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+#state2 .c24,
+#state3 .c24,
+#state4 .c24,
+#state1 .c24 {
+  position: absolute;
+  top: 116.666%;
+  left: calc(75% + 10px);
+  width: calc(25% - 0px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+.c24 {
+  position: absolute;
+  top: 49.999%;
+  left: calc(75% + 10px);
+  width: calc(25% - 20px);
+  height: calc(16.666% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+/* //////////////////// Style //////////////////// */
+
+@keyframes condAnim {
+  0% {
+    font-variation-settings: "wght" 400, "wdth" 12;
+    filter: blur(0px);
+  }
+
+  20% {
+    filter: blur(10px);
+  }
+
+  50% {
+    font-variation-settings: "wght" 50, "wdth" 23;
+  }
+
+  80% {
+    filter: blur(10px);
+  }
+
+  100% {
+    font-variation-settings: "wght" 400, "wdth" 12;
+    filter: blur(0px);
+  }
+}
+
+@keyframes condCircle1 {
+  0% {
+    width: 0vh;
+    height: 0vh;
+  }
+
+  20% {
+    width: 0vh;
+    height: 0vh;
+  }
+
+  50% {
+    width: 20vh;
+    height: 20vh;
+  }
+
+  80% {
+    width: 0vh;
+    height: 0vh;
+  }
+
+  100% {
+    width: 0vh;
+    height: 0vh;
+  }
+}
+
+.cond {
+  z-index: 10;
+  position: absolute;
+  margin: 0;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: auto;
+  font-family: circular;
+  font-size: 21vw;
+  top: 52%;
+  left: 51%;
+  animation-name: condAnim;
+  animation-duration: 3.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.condCircle1 {
+  transform: translate(-50%, -50%);
+  filter: blur(20px);
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  background-color: white !important;
+  animation-name: condCircle1;
+  animation-duration: 3.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.condCircle2 {
+  transform: translate(-50%, -50%);
+  filter: blur(20px);
+  z-index: 10;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100%;
+  background-color: white !important;
+  animation-name: condCircle1;
+  animation-duration: 3.1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.condCircle3 {
+  transform: translate(-50%, -50%);
+  filter: blur(20px);
+  z-index: 10;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100%;
+  background-color: white !important;
+  animation-name: condCircle1;
+  animation-duration: 3.1s;
+  animation-delay: -0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.condCircle4 {
+  transform: translate(-50%, -50%);
+  filter: blur(20px);
+  z-index: 10;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100%;
+  background-color: white !important;
+  animation-name: condCircle1;
+  animation-duration: 3.1s;
+  animation-delay: -0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.condCircle5 {
+  transform: translate(-50%, -50%);
+  filter: blur(20px);
+  z-index: 10;
+  position: absolute;
+  top: 15%;
+  left: 87%;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100%;
+  background-color: white !important;
+  animation-name: condCircle1;
+  animation-duration: 3.1s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.t1 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 35;
+  top: 52%;
+  left: 51%;
+  transition: filter 0.3s ease-in;
+}
+
+.t2 {
+  text-align: left;
+  font-size: 10vw;
+  line-height: 0.8;
+  transform: translate(-50%, -50%) scale(1, 1.1);
+  font-variation-settings: "wght" 700, "wdth" 15;
+  top: 52%;
+  left: 50%;
+  transition: filter 0.3s ease-in;
+}
+
+.t3 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 15;
+  top: 52%;
+  left: 51%;
+  transition: filter 0.3s ease-in;
+}
+
+.t4 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  transform: translate(-50%, -50%) scale(1, 1);
+  letter-spacing: 0.9;
+  font-variation-settings: "wght" 700, "wdth" 15;
+  top: 52%;
+  left: 50%;
+  transition: filter 0.3s ease-in;
+}
+
+.t5 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  transform: translate(-50%, -50%) scale(1, 1);
+  letter-spacing: 0.9;
+  font-variation-settings: "wght" 700, "wdth" 58;
+  top: 52%;
+  left: 50%;
+  transition: filter 0.3s ease-in;
+}
+
+.t6 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  transform: translate(-50%, -50%) scale(1, 1);
+  letter-spacing: 0.9;
+  font-variation-settings: "wght" 700, "wdth" 20;
+  top: 52%;
+  left: 50%;
+  transition: filter 0.3s ease-in;
+  word-wrap: none !important;
+  hyphens: none;
+}

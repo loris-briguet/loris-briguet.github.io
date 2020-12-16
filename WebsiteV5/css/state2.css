@@ -1,0 +1,316 @@
+/* //////////////////// Grid //////////////////// */
+
+#state2 .c2 {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 62.5%;
+  width: calc(37.5% - 20px);
+  height: calc(100% - 20px);
+  background-color: red;
+  border: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease, width 1s ease, height 1s ease;
+}
+
+#state3 .c2,
+#state4 .c2 {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 75%;
+  width: calc(25% - 20px);
+  height: calc(100% - 20px);
+  background-color: red;
+  border: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease, width 1s ease, height 1s ease;
+}
+
+#state5 .c2,
+#state6 .c2,
+#state7 .c2 {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 75%;
+  width: calc(25% - 20px);
+  height: calc(66.666% - 20px);
+  background-color: red;
+  border: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease, width 1s ease, height 1s ease;
+}
+
+.c2 {
+  z-index: 100;
+  position: absolute;
+  top: 100%;
+  left: 62.5%;
+  width: calc(37.5% - 20px);
+  height: calc(100% - 20px);
+  background-color: red;
+  border: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease, width 1s ease, height 1s ease;
+}
+
+#state2 .c3 {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: calc(62.5% - 10px);
+  height: calc(33.333% - 20px);
+  background-color: red;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease;
+}
+
+#state1 .c3 {
+  z-index: 1;
+  position: absolute;
+  top: 100vh;
+  left: 0vw;
+  width: calc(62.5% - 10px);
+  height: calc(33.333% - 20px);
+  background-color: red;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease;
+}
+
+.c3 {
+  z-index: 1;
+  position: absolute;
+  top: 0vh;
+  left: 75%;
+  width: calc(62.5% - 10px);
+  height: calc(33.333% - 20px);
+  background-color: red;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease;
+}
+
+#state2 .c4 {
+  z-index: 2;
+  position: absolute;
+  top: 33.33vh;
+  left: 0;
+  width: calc(62.5% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.1s, width 1s ease;
+}
+
+#state1 .c4 {
+  z-index: 2;
+  position: absolute;
+  top: 100vh;
+  left: 0vw;
+  width: calc(62.5% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.1s, width 1s ease;
+}
+
+.c4 {
+  z-index: 2;
+  position: absolute;
+  top: 33.333vh;
+  left: 75%;
+  width: calc(75% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.1s, width 1s ease;
+}
+
+#state2 .c5 {
+  z-index: 3;
+  position: absolute;
+  top: 66.666vh;
+  left: 0;
+  width: calc(62.5% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+#state1 .c5 {
+  z-index: 3;
+  position: absolute;
+  top: 100vh;
+  left: 0vw;
+  width: calc(62.5% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+.c5 {
+  z-index: -1;
+  position: absolute;
+  top: 66.666vh;
+  left: 75%;
+  width: calc(75% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+/* //////////////////// Style //////////////////// */
+@keyframes sizeAnim {
+  0% {
+    /* font-size: 1000%;
+    letter-spacing: 1vw;
+    text-indent: 3vw;
+    filter: blur(0px);
+    letter-spacing: 5vw; */
+    font-variation-settings: "wght" 710, "wdth" 25;
+  }
+
+  5% {
+    filter: blur(0px);
+  }
+
+  15% {
+    filter: blur(30px);
+  }
+
+  45% {
+    filter: blur(0px);
+  }
+
+  50% {
+    /* letter-spacing: -10vw;
+    text-indent: -10vw;  */
+    font-variation-settings: "wght" 70, "wdth" 45;
+  }
+
+  55% {
+    filter: blur(0px);
+  }
+
+  85% {
+    filter: blur(30px);
+  }
+
+  95% {
+    filter: blur(0px);
+  }
+
+  100% {
+    /* font-size: 1000%;
+    letter-spacing: 1vw;
+    text-indent: 3vw;
+    filter: blur(0px);
+    letter-spacing: 5vw; */
+    font-variation-settings: "wght" 710, "wdth" 25;
+  }
+}
+
+.size {
+  z-index: 10;
+  position: absolute;
+  margin: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: auto;
+  font-family: circular;
+  font-size: 28vw;
+  top: 50%;
+  left: 47%;
+  text-align: center;
+  animation-name: sizeAnim;
+  animation-duration: 4.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.small {
+  z-index: 10;
+  text-align: center;
+  position: absolute;
+  margin: 0;
+  transform: translate(-50%, -50%) rotate(0);
+  width: auto;
+  font-family: circular;
+  font-size: 20vw;
+  font-variation-settings: "wght" 200, "wdth" 85;
+  top: 53%;
+  left: 49%;
+  letter-spacing: auto;
+
+  transition: filter 0.3s ease-in;
+}
+
+.c3:hover .small,
+.c3.hover .small {
+  filter: blur(10px);
+}
+
+.medium {
+  z-index: 10;
+  position: absolute;
+  margin: 0;
+  transform: translate(-50%, -50%) rotate(0);
+  width: auto;
+  font-family: circular;
+  font-size: 20vw;
+  font-variation-settings: "wght" 500, "wdth" 50;
+  top: 52%;
+  left: 50%;
+  letter-spacing: auto;
+  transition: filter 0.5s ease-in;
+}
+
+.c4:hover .medium,
+.c4.hover .medium {
+  filter: blur(15px);
+}
+
+.large {
+  z-index: 10;
+  position: absolute;
+  margin: 0;
+  transform: translate(-50%, -50%) rotate(0);
+  width: auto;
+  font-family: circular;
+  font-size: 20vw;
+  font-variation-settings: "wght" 800, "wdth" 78;
+  top: 52%;
+  left: 50%;
+  letter-spacing: auto;
+  transition: filter 0.4s ease-in;
+}
+
+.c5:hover .large,
+.c5.hover .large {
+  filter: blur(20px);
+}

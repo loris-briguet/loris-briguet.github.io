@@ -1,0 +1,411 @@
+/* //////////////////// Grid //////////////////// */
+#state3 .c6,
+#state4 .c6,
+#state5 .c6,
+#state6 .c6,
+#state7 .c6 {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(75% - 10px);
+  height: calc(33.333% - 20px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  opacity: 100%;
+  transition: left 1s ease, left 1s ease, width 1s ease;
+}
+
+.c6 {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: calc(75% - 10px);
+  height: calc(33.333% - 20px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  opacity: 100%;
+  transition: left 1s ease, left 1s ease, width 1s ease;
+}
+
+#state3 .c7 {
+  position: absolute;
+  top: 33.333%;
+  left: 0%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: left 1s ease, left 1s ease 0.1s, width 1s ease;
+}
+
+#state1 .c7,
+#state2 .c7 {
+  position: absolute;
+  top: 33.333%;
+  left: -75%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.1s, width 1s ease;
+}
+
+.c7 {
+  position: absolute;
+  top: -33.333%;
+  left: 0%;
+  width: calc(25% - 0px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.1s, width 1s ease;
+}
+
+#state3 .c8 {
+  position: absolute;
+  top: 33.333%;
+  left: 25%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.1s, width 1s ease;
+}
+
+#state1 .c8,
+#state2 .c8 {
+  position: absolute;
+  top: 33.333%;
+  left: -50%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.1s, width 1s ease;
+}
+
+.c8 {
+  position: absolute;
+  top: -33.333%;
+  left: 25%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.1s, width 1s ease;
+}
+
+#state3 .c9 {
+  position: absolute;
+  top: 33.333%;
+  left: 50%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.1s, width 1s ease;
+}
+
+#state1 .c9,
+#state2 .c9 {
+  position: absolute;
+  top: 33.333%;
+  left: -25%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.1s, width 1s ease;
+}
+
+.c9 {
+  position: absolute;
+  top: -33.333%;
+  left: 50%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.1s, width 1s ease;
+}
+
+#state3 .c10 {
+  position: absolute;
+  top: 66.66%;
+  left: 0%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+#state1 .c10,
+#state2 .c10 {
+  position: absolute;
+  top: 66.666%;
+  left: -75%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.2s, width 1s ease;
+}
+
+.c10 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease, left 1s ease 0.1s, width 1s ease;
+}
+
+#state3 .c11 {
+  position: absolute;
+  top: 66.66%;
+  left: 25%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: left 1s ease 0.1s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state1 .c11,
+#state2 .c11 {
+  position: absolute;
+  top: 66.666%;
+  left: -50%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: left 1s ease 0.1s, left 1s ease 0.2s, width 1s ease;
+}
+
+.c11 {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease 0.1s, left 1s ease 0.1s, width 1s ease;
+}
+
+#state3 .c12 {
+  position: absolute;
+  top: 66.66%;
+  left: 50%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: left 1s ease 0.2s, left 1s ease 0.2s, width 1s ease;
+}
+
+#state1 .c12,
+#state2 .c12 {
+  position: absolute;
+  top: 66.666%;
+  left: -25%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: left 1s ease 0.2s, left 1s ease 0.2s, width 1s ease;
+}
+
+.c12 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  background-color: red;
+  border: 10px solid white;
+  border-right: 0px;
+  border-top: 0px;
+  opacity: 100%;
+  transition: top 1s ease 0.2s, left 1s ease 0.1s, width 1s ease;
+}
+/* //////////////////// Style //////////////////// */
+@keyframes meatAnim {
+  5% {
+    filter: blur(0px);
+  }
+  25% {
+    filter: blur(20px);
+  }
+
+  50% {
+    filter: blur(0px);
+  }
+  75% {
+    filter: blur(20px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes meatSquareAnim {
+  0% {
+    left: -35%;
+  }
+
+  50% {
+    left: 102%;
+  }
+
+  100% {
+    left: -35%;
+  }
+}
+
+.meat {
+  z-index: 10;
+  position: absolute;
+  margin: 0;
+  transform: translate(-50%, -50%) rotate(0);
+  width: auto;
+  font-family: circular;
+  font-variation-settings: "wght" 600, "wdth" 128;
+  font-size: 21vw;
+  top: 53%;
+  left: 49%;
+  animation-name: meatAnim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.meatSquare {
+  filter: blur(90px);
+  z-index: 10;
+  position: absolute;
+  top: 5%;
+  left: 1.5%;
+  height: 90%;
+  width: 30%;
+  background-color: white !important;
+  animation-name: meatSquareAnim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.m1 {
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 60;
+  top: 51%;
+  left: 49%;
+  transition: filter 0.3s ease-in;
+}
+
+.m2 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 70;
+  top: 51%;
+  left: 49%;
+  transition: filter 0.3s ease-in;
+}
+
+.m3 {
+  font-size: 11vw;
+  text-align: left;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 65;
+  top: 51%;
+  left: 49%;
+  transition: filter 0.3s ease-in;
+}
+.m4 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 60;
+  top: 51%;
+  left: 49%;
+  transition: filter 0.3s ease-in;
+}
+.m5 {
+  font-size: 11vw;
+  text-align: left;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 100;
+  top: 51%;
+  left: 49%;
+  transition: filter 0.3s ease-in;
+}
+.m6 {
+  text-align: left;
+  font-size: 11vw;
+  line-height: 0.8;
+  font-variation-settings: "wght" 700, "wdth" 20;
+  top: 51%;
+  left: 49%;
+  transition: filter 0.3s ease-in;
+}
