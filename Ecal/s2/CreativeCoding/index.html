@@ -1,0 +1,663 @@
+-
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ux Web Creative Coding</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="assets/lib/p5.min.js"></script>
+  <script src="assets/lib/p5.dom.min.js"></script>
+  <script src="assets/lib/p5.sound.min.js"></script>
+  <script src="assets/lib/tone.js"></script>
+  <script src="assets/lib/jquery-1.10.2.min.js"></script>
+
+  <script charset="UTF-8" src="assets/synth/Synth11.js"></script>
+  <script charset="UTF-8" src="assets/songCaller.js"></script>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function () {
+      $("#getAssignment").click(function () {
+        var $divs = $(".story");
+        if ($divs.length > 0) {
+          window.location.href = "#" + $divs[Math.floor(Math.random() * $divs.length)].id;
+        }
+      });
+    });
+  </script>
+
+  <div class="content">
+
+    <div class="menu">
+      <a href="#home" class="menuItem">Home</a>
+      <a href="#about" class="menuItem">About</a>
+      <a href="#index" class="menuItem">Index</a>
+      <a id="getAssignment" class="navbarItem">Random</a>
+    </div>
+
+    <div id="home" class="home">
+      <div class="titleCenter">
+        <h1 class="homeTitle">INVISIBLE <br> CITIES</h1>
+        <h2 class="homeSub">Italo Calvino, 1972</h2>
+      </div>
+
+      <a href="#about" class="nextPage">next</a>
+    </div>
+
+    <div id="about" class="about-index">
+      <h1 class="indexAboutTitle">ABOUT</h1>
+      <div class="aboutPart">
+        <h2 class="aboutSub">The Book</h2>
+        <p class="aboutText">In a garden sit the aged Kublai Khan and the young Marco Polo — Mongol emperor and Venetian
+          traveler. Kublai Khan has sensed the end of his empire coming soon. Marco Polo diverts his host with stories
+          of the cities he has seen in his travels around the empire: cities and memory, cities and desire, cities and
+          designs, cities and the dead, cities and the sky, trading cities, hidden cities. As Marco Polo unspools his
+          tales, the emperor detects these fantastic places are more than they appear.</p>
+      </div>
+      <div class="aboutPart">
+        <h2 class="aboutSub">The Player</h2>
+        <p class="aboutText">This website was created to accompany you throughout your reading of the novel "The Invisible Cities" by Italo Calvino. <br>
+          For each city a track is generated, all the parameters linked to it are controled by the text corresponding to its city. 
+          So as your imagination wanders trough the streets of those utopic cities their sounds will guide you trough them.
+        </p>
+      </div>
+      <div class="navAbout">
+        <a href="#home" class="nextPageStory">previous </a>
+        <a href="#index" class="nextPageStory"> next</a>
+      </div>
+    </div>
+
+    <div id="index" class="about-index">
+      <h1 class="indexAboutTitle">INDEX</h1>
+      <div class="chapters">
+        <div class="chapter">
+          <a class="indexChapter">chapter I</a>
+          <a href="#11" class="indexType">Cities & Memory I</a>
+          <a href="#12" class="indexType">Cities & Memory II</a>
+          <a href="#21" class="indexType">Cities & Desire I</a>
+          <a href="#13" class="indexType">Cities & Memory III</a>
+          <a href="#22" class="indexType">Cities & Desire II</a>
+          <a href="#31" class="indexType">Cities & Signs I</a>
+          <a href="#14" class="indexType">Cities & Memory IV</a>
+          <a href="#23" class="indexType">Cities & Desire III</a>
+          <a href="#32" class="indexType">Cities & Signs II</a>
+          <a href="#41" class="indexType">Thin Cities I</a>
+        </div>
+        <div class="chapter">
+          <a class="indexChapter">chapter II</a>
+          <a href="#15" class="indexType">Cities & Memory V</a>
+          <a href="#24" class="indexType">Cities & Desire IV</a>
+          <a href="#33" class="indexType">Cities & Signs III</a>
+          <a href="#42" class="indexType">Thin Cities II</a>
+          <a href="#51" class="indexType">Trading Cities I</a>
+        </div>
+        <div class="chapter">
+          <a class="indexChapter">chapter III</a>
+          <a href="#25" class="indexType">Cities & Desire V</a>
+          <a href="#34" class="indexType">Cities & Signs IV</a>
+          <a href="#43" class="indexType">Thin Cities III</a>
+          <a href="#52" class="indexType">Trading Cities II</a>
+          <a href="#61" class="indexType">Cities & Eyes I</a>
+        </div>
+        <div class="chapter">
+          <a class="indexChapter">chapter IV</a>
+          <a href="#35" class="indexType">Cities & Signs V</a>
+          <a href="#44" class="indexType">Thin Cities IV</a>
+          <a href="#53" class="indexType">Trading Cities III</a>
+          <a href="#62" class="indexType">Cities & Eyes II</a>
+          <a href="#71" class="indexType">Cities & Names I</a>
+        </div>
+        <div class="chapter">
+          <a class="indexChapter">chapter V</a>
+          <a href="#45" class="indexType">Thin Cities V</a>
+          <a href="#54" class="indexType">Trading Cities IV</a>
+          <a href="#63" class="indexType">Cities & Eyes III</a>
+          <a href="#72" class="indexType">Cities & Names II</a>
+          <a href="#81" class="indexType">Cities & the Dead I</a>
+        </div>
+        <div class="chapter">
+          <a class="indexChapter">chapter VI</a>
+          <a href="#55" class="indexType">Trading Cities V</a>
+          <a href="#64" class="indexType">Cities & Eyes IV</a>
+          <a href="#73" class="indexType">Cities & Names III</a>
+          <a href="#82" class="indexType">Cities & the Dead II</a>
+          <a href="#91" class="indexType">Cities & the Sky I</a>
+        </div>
+        <div class="chapter">
+          <a class="indexChapter">chapter VII</a>
+          <a href="#65" class="indexType">Cities & Eyes V</a>
+          <a href="#74" class="indexType">Cities & Names IV</a>
+          <a href="#83" class="indexType">Cities & the Dead III</a>
+          <a href="#92" class="indexType">Cities & the Sky II</a>
+          <a href="#101" class="indexType">Continuous Cities I</a>
+        </div>
+        <div class="chapter">
+          <a class="indexChapter">chapter VIII</a>
+          <a href="#75" class="indexType">Cities & Names V</a>
+          <a href="#84" class="indexType">Cities & the Dead IV</a>
+          <a href="#93" class="indexType">Cities & the Sky III</a>
+          <a href="#102" class="indexType">Continuous Cities II</a>
+          <a href="#111" class="indexType">Hidden Cities I</a>
+        </div>
+        <div class="chapter">
+          <a class="indexChapter">chapter IX</a>
+          <a href="#85" class="indexType">Cities & the Dead V</a>
+          <a href="#94" class="indexType">Cities & the Sky IV</a>
+          <a href="#103" class="indexType">Continuous Cities III</a>
+          <a href="#112" class="indexType">Hidden Cities II</a>
+          <a href="#95" class="indexType">Cities & the Sky V</a>
+          <a href="#104" class="indexType">Continuous Cities IV</a>
+          <a href="#113" class="indexType">Hidden Cities III</a>
+          <a href="#105" class="indexType">Continuous Cities V</a>
+          <a href="#114" class="indexType">Hidden Cities IV</a>
+          <a href="#115" class="indexType">Hidden Cities V</a>
+        </div>
+      </div>
+      <div class="navAbout">
+        <a href="#about" class="nextPageStory">previous </a>
+        <a href="#11" class="nextPageStory"> next</a>
+      </div>
+    </div>
+
+    <div id="11" class="story">
+      <h1 class="cityName">DIOMIRA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Memory I</h2>
+      <div class="nav">
+        <a href="#index" class="nextPageStory">previous</a>
+        <a href="#12" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="12" class="story">
+      <h1 class="cityName">ISIDORA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Memory II</h2>
+      <div class="nav">
+        <a href="#11" class="nextPageStory">previous</a>
+        <a href="#21" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="21" class="story">
+      <h1 class="cityName">DOROTHEA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Desire I</h2>
+      <div class="nav">
+        <a href="#12" class="nextPageStory">previous</a>
+        <a href="#13" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="13" class="story">
+      <h1 class="cityName">ZAIRA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Memory III</h2>
+      <div class="nav">
+        <a href="#21" class="nextPageStory">previous</a>
+        <a href="#22" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="22" class="story">
+      <h1 class="cityName">ANASTASIA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Desire II</h2>
+      <div class="nav">
+        <a href="#13" class="nextPageStory">previous</a>
+        <a href="#31" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="31" class="story">
+      <h1 class="cityName">TAMARA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Signs I</h2>
+      <div class="nav">
+        <a href="#22" class="nextPageStory">previous</a>
+        <a href="#14" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="14" class="story">
+      <h1 class="cityName">ZORA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Memory IV</h2>
+      <div class="nav">
+        <a href="#31" class="nextPageStory">previous</a>
+        <a href="#23" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="23" class="story">
+      <h1 class="cityName">DESPINA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Desire III</h2>
+      <div class="nav">
+        <a href="#14" class="nextPageStory">previous</a>
+        <a href="#32" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="32" class="story">
+      <h1 class="cityName">ZIRMA</h1>
+      <h2 class="cityInfos">Chapter I, Cities & Signs II</h2>
+      <div class="nav">
+        <a href="#23" class="nextPageStory">previous</a>
+        <a href="#41" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="41" class="story">
+      <h1 class="cityName">ISAURA</h1>
+      <h2 class="cityInfos">Chapter I, Thin Cities I</h2>
+      <div class="nav">
+        <a href="#32" class="nextPageStory">previous</a>
+        <a href="#15" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="15" class="story">
+      <h1 class="cityName">MAURILIA</h1>
+      <h2 class="cityInfos">Chapter II, Cities & Memory V</h2>
+      <div class="nav">
+        <a href="#41" class="nextPageStory">previous</a>
+        <a href="#24" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="24" class="story">
+      <h1 class="cityName">FEDORA</h1>
+      <h2 class="cityInfos">Chapter II, Cities & Desire IV</h2>
+      <div class="nav">
+        <a href="#15" class="nextPageStory">previous</a>
+        <a href="#33" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="33" class="story">
+      <h1 class="cityName">ZOE</h1>
+      <h2 class="cityInfos">Chapter II, Cities & Signs III</h2>
+      <div class="nav">
+        <a href="#24" class="nextPageStory">previous</a>
+        <a href="#42" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="42" class="story">
+      <h1 class="cityName">ZENOBIA</h1>
+      <h2 class="cityInfos">Chapter II, Thin Cities II</h2>
+      <div class="nav">
+        <a href="#33" class="nextPageStory">previous</a>
+        <a href="#51" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="51" class="story">
+      <h1 class="cityName">EUPHEMIA</h1>
+      <h2 class="cityInfos">Chapter II, Trading Cities I</h2>
+      <div class="nav">
+        <a href="#42" class="nextPageStory">previous</a>
+        <a href="#25" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="25" class="story">
+      <h1 class="cityName">ZOBEIDE</h1>
+      <h2 class="cityInfos">Chapter III, Cities & Desire V</h2>
+      <div class="nav">
+        <a href="#51" class="nextPageStory">previous</a>
+        <a href="#34" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="34" class="story">
+      <h1 class="cityName">HYPATIA</h1>
+      <h2 class="cityInfos">Chapter III, Cities & Signs IV</h2>
+      <div class="nav">
+        <a href="#25" class="nextPageStory">previous</a>
+        <a href="#43" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="43" class="story">
+      <h1 class="cityName">ARMILLA</h1>
+      <h2 class="cityInfos">Chapter III, Thin Cities III</h2>
+      <div class="nav">
+        <a href="#34" class="nextPageStory">previous</a>
+        <a href="#52" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="52" class="story">
+      <h1 class="cityName">CHLOE</h1>
+      <h2 class="cityInfos">Chapter III, Trading Cities II</h2>
+      <div class="nav">
+        <a href="#43" class="nextPageStory">previous</a>
+        <a href="#61" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="61" class="story">
+      <h1 class="cityName">VALDRADA</h1>
+      <h2 class="cityInfos">Chapter III, Cities & Eyes I</h2>
+      <div class="nav">
+        <a href="#52" class="nextPageStory">previous</a>
+        <a href="#35" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="35" class="story">
+      <h1 class="cityName">OLIVIA</h1>
+      <h2 class="cityInfos">Chapter IV, Cities & Signs V</h2>
+      <div class="nav">
+        <a href="#61" class="nextPageStory">previous</a>
+        <a href="#44" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="44" class="story">
+      <h1 class="cityName">SOPHRONIA</h1>
+      <h2 class="cityInfos">Chapter IV, Thin Cities IV</h2>
+      <div class="nav">
+        <a href="#35" class="nextPageStory">previous</a>
+        <a href="#53" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="53" class="story">
+      <h1 class="cityName">EUTROPIA</h1>
+      <h2 class="cityInfos">Chapter IV, Trading Cities III</h2>
+      <div class="nav">
+        <a href="#44" class="nextPageStory">previous</a>
+        <a href="#62" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="62" class="story">
+      <h1 class="cityName">ZEMRUDE</h1>
+      <h2 class="cityInfos">Chapter IV, Cities & Eyes II</h2>
+      <div class="nav">
+        <a href="#53" class="nextPageStory">previous</a>
+        <a href="#71" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="71" class="story">
+      <h1 class="cityName">AGLAURA</h1>
+      <h2 class="cityInfos">Chapter IV, Cities & Names I</h2>
+      <div class="nav">
+        <a href="#62" class="nextPageStory">previous</a>
+        <a href="#45" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="45" class="story">
+      <h1 class="cityName">OCTAVIA</h1>
+      <h2 class="cityInfos">Chapter V, Thin Cities V</h2>
+      <div class="nav">
+        <a href="#71" class="nextPageStory">previous</a>
+        <a href="#54" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="54" class="story">
+      <h1 class="cityName">ERSILIA</h1>
+      <h2 class="cityInfos">Chapter V, Trading Cities IV</h2>
+      <div class="nav">
+        <a href="#45" class="nextPageStory">previous</a>
+        <a href="#63" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="63" class="story">
+      <h1 class="cityName">BAUCIS</h1>
+      <h2 class="cityInfos">Chapter V, Cities & Eyes III</h2>
+      <div class="nav">
+        <a href="#54" class="nextPageStory">previous</a>
+        <a href="#72" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="72" class="story">
+      <h1 class="cityName">LEANDRA</h1>
+      <h2 class="cityInfos">Chapter V, Cities & Names II</h2>
+      <div class="nav">
+        <a href="#63" class="nextPageStory">previous</a>
+        <a href="#81" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="81" class="story">
+      <h1 class="cityName">MELANIA</h1>
+      <h2 class="cityInfos">Chapter V, Cities & the Dead I</h2>
+      <div class="nav">
+        <a href="#72" class="nextPageStory">previous</a>
+        <a href="#55" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="55" class="story">
+      <h1 class="cityName">ESMERALDA</h1>
+      <h2 class="cityInfos">Chapter VI, Trading Cities V</h2>
+      <div class="nav">
+        <a href="#81" class="nextPageStory">previous</a>
+        <a href="#64" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="64" class="story">
+      <h1 class="cityName">PHYLLIS</h1>
+      <h2 class="cityInfos">Chapter VI, Cities & Eyes IV</h2>
+      <div class="nav">
+        <a href="#55" class="nextPageStory">previous</a>
+        <a href="#73" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="73" class="story">
+      <h1 class="cityName">PYRRHA</h1>
+      <h2 class="cityInfos">Chapter VI, Cities & Names III</h2>
+      <div class="nav">
+        <a href="#64" class="nextPageStory">previous</a>
+        <a href="#82" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="82" class="story">
+      <h1 class="cityName">ADELMA</h1>
+      <h2 class="cityInfos">Chapter VI, Cities & the Dead II</h2>
+      <div class="nav">
+        <a href="#73" class="nextPageStory">previous</a>
+        <a href="#91" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="91" class="story">
+      <h1 class="cityName">EUDOXIA</h1>
+      <h2 class="cityInfos">Chapter VI, Cities & the Sky I</h2>
+      <div class="nav">
+        <a href="#82" class="nextPageStory">previous</a>
+        <a href="#65" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="65" class="story">
+      <h1 class="cityName">MORIANA</h1>
+      <h2 class="cityInfos">Chapter VII, Cities & Eyes V</h2>
+      <div class="nav">
+        <a href="#91" class="nextPageStory">previous</a>
+        <a href="#23" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="74" class="story">
+      <h1 class="cityName">CLARICE</h1>
+      <h2 class="cityInfos">Chapter VII, Cities & Names IV</h2>
+      <div class="nav">
+        <a href="#65" class="nextPageStory">previous</a>
+        <a href="#83" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="83" class="story">
+      <h1 class="cityName">EUSAPIA</h1>
+      <h2 class="cityInfos">Chapter VII, Cities & the Dead III</h2>
+      <div class="nav">
+        <a href="#74" class="nextPageStory">previous</a>
+        <a href="#92" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="92" class="story">
+      <h1 class="cityName">BEERSHEBA</h1>
+      <h2 class="cityInfos">Chapter VII, Cities & the Sky II</h2>
+      <div class="nav">
+        <a href="#83" class="nextPageStory">previous</a>
+        <a href="#101" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="101" class="story">
+      <h1 class="cityName">LEONIA</h1>
+      <h2 class="cityInfos">Chapter VII, Continuous Cities I</h2>
+      <div class="nav">
+        <a href="#92" class="nextPageStory">previous</a>
+        <a href="#75" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="75" class="story">
+      <h1 class="cityName">IRENE</h1>
+      <h2 class="cityInfos">Chapter VIII, Cities & Names V</h2>
+      <div class="nav">
+        <a href="#101" class="nextPageStory">previous</a>
+        <a href="#84" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="84" class="story">
+      <h1 class="cityName">ARGIA</h1>
+      <h2 class="cityInfos">Chapter VIII, Cities & the Dead IV</h2>
+      <div class="nav">
+        <a href="#75" class="nextPageStory">previous</a>
+        <a href="#93" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="93" class="story">
+      <h1 class="cityName">THEKLA</h1>
+      <h2 class="cityInfos">Chapter VIII, Cities & the Sky III</h2>
+      <div class="nav">
+        <a href="#84" class="nextPageStory">previous</a>
+        <a href="#102" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="102" class="story">
+      <h1 class="cityName">TRUDE</h1>
+      <h2 class="cityInfos">Chapter VIII, Continuous Cities II</h2>
+      <div class="nav">
+        <a href="#93" class="nextPageStory">previous</a>
+        <a href="#111" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="111" class="story">
+      <h1 class="cityName">OLINDA</h1>
+      <h2 class="cityInfos">Chapter VIII, Hidden Cities I</h2>
+      <div class="nav">
+        <a href="#102" class="nextPageStory">previous</a>
+        <a href="#85" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="85" class="story">
+      <h1 class="cityName">LAUDOMIA</h1>
+      <h2 class="cityInfos">Chapter IX, Cities & the Dead V</h2>
+      <div class="nav">
+        <a href="#111" class="nextPageStory">previous</a>
+        <a href="#94" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="94" class="story">
+      <h1 class="cityName">PERINTHIA</h1>
+      <h2 class="cityInfos">Chapter IX, Cities & the Sky IV</h2>
+      <div class="nav">
+        <a href="#85" class="nextPageStory">previous</a>
+        <a href="#103" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="103" class="story">
+      <h1 class="cityName">PROCOPIA</h1>
+      <h2 class="cityInfos">Chapter IX, Continuous Cities III</h2>
+      <div class="nav">
+        <a href="#94" class="nextPageStory">previous</a>
+        <a href="#112" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="112" class="story">
+      <h1 class="cityName">RAISSA</h1>
+      <h2 class="cityInfos">Chapter IX, Hidden Cities II</h2>
+      <div class="nav">
+        <a href="#103" class="nextPageStory">previous</a>
+        <a href="#95" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="95" class="story">
+      <h1 class="cityName">ANDRIA</h1>
+      <h2 class="cityInfos">Chapter IX, Cities & the Sky V</h2>
+      <div class="nav">
+        <a href="#112" class="nextPageStory">previous</a>
+        <a href="#104" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="104" class="story">
+      <h1 class="cityName">CECILIA</h1>
+      <h2 class="cityInfos">Chapter IX, Continuous Cities IV</h2>
+      <div class="nav">
+        <a href="#95" class="nextPageStory">previous</a>
+        <a href="#113" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="113" class="story">
+      <h1 class="cityName">MAROZIA</h1>
+      <h2 class="cityInfos">Chapter IX, Hidden Cities III</h2>
+      <div class="nav">
+        <a href="#104" class="nextPageStory">previous</a>
+        <a href="#105" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="105" class="story">
+      <h1 class="cityName">PENTHESILEA</h1>
+      <h2 class="cityInfos">Chapter IX, Continuous Cities V</h2>
+      <div class="nav">
+        <a href="#113" class="nextPageStory">previous</a>
+        <a href="#114" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="114" class="story">
+      <h1 class="cityName">THEODORA</h1>
+      <h2 class="cityInfos">Chapter IX, Hidden Cities IV</h2>
+      <div class="nav">
+        <a href="#105" class="nextPageStory">previous</a>
+        <a href="#115" class="nextPageStory">next</a>
+      </div>
+    </div>
+
+    <div id="115" class="story">
+      <h1 class="cityName">BERENICE</h1>
+      <h2 class="cityInfos">Chapter IX, Hidden Cities V</h2>
+      <div class="nav">
+        <a href="#114" class="nextPageStory">previous</a>
+        <a href="#home" class="nextPageStory">home</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Space_Mono';
+    src: url('../assets/font/SpaceMono-Bold.ttf') format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    background-color: #430CE8 ;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 600vw;
+    cursor: none;
+    font-family: ;
+}
+
+canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+ z-index: 1 ;
+
+
+  }
+
+.event{
+    z-index: 100 !important;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    z-index: 1000000;
+    padding-left: 250px;
+
+}
+
+a{
+}
+
+.menuItem{
+    position: relative;
+    font-family: Space_Mono;
+    font-size: 7.3em;
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+    padding-left: 60px;
+    margin-top: -3vw;
+    display: inline-block;
+}
