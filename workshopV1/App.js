@@ -122,13 +122,14 @@ function initialize() {
   mesh1 = new THREE.Mesh(geometry1, material1);
   console.log(mesh1);
   mesh1.position.y = 0.5;
+
+  markerRoot1.add(mesh1);
 }
 
 function update() {
   // update artoolkit on every frame
   if (arToolkitSource.ready !== false)
     arToolkitContext.update(arToolkitSource.domElement);
-  //sconsole.log(scene);
   console.log(arToolkitContext);
 }
 
