@@ -108,11 +108,6 @@ function initialize() {
     patternUrl: "data/hiro.patt",
   });
 
-  let markerTransformation = [];
-  markerTransformation.push(
-    arToolkitSource.getInstance().queryMarkerTransformation(markerRoot1)
-  );
-
   let geometry1 = new THREE.CubeGeometry(1, 1, 1);
 
   let material1 = new THREE.MeshNormalMaterial({
@@ -122,7 +117,7 @@ function initialize() {
   });
 
   mesh1 = new THREE.Mesh(geometry1, material1);
-  console.log(mesh1);
+  //console.log(mesh1);
   mesh1.position.y = 0.5;
 }
 
@@ -130,7 +125,12 @@ function update() {
   // update artoolkit on every frame
   if (arToolkitSource.ready !== false)
     arToolkitContext.update(arToolkitSource.domElement);
-  console.log(scene);
+  //console.log(scene);
+  let markerTransformation = [];
+  markerTransformation.push(
+    arToolkitSource.getInstance().queryMarkerTransformation(markerRoot1)
+  );
+  console.log(markerTransformation[14]);
 }
 
 function render() {
