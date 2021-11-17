@@ -128,7 +128,7 @@ function update() {
   //console.log(scene);
   let markerTransformation = [];
   markerTransformation.push(
-    arToolkitSource.getInstance().queryMarkerTransformation(markerRoot1)
+    arToolkitContext.getInstance().queryMarkerTransformation(markerRoot1)
   );
   console.log(markerTransformation[14]);
 }
