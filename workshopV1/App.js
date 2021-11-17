@@ -130,12 +130,11 @@ function update() {
   // update artoolkit on every frame
   if (arToolkitSource.ready !== false)
     arToolkitContext.update(arToolkitSource.domElement);
-  console.log(mesh1);
+  console.log(mesh1.geometry);
 }
 
 function render() {
   renderer.render(scene, camera);
-  console.log(mesh1);
 }
 
 function animate() {
