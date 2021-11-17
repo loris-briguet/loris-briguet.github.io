@@ -11,7 +11,6 @@ function initialize() {
     navigator.getBattery().then(function (battery) {
       function updateAllBatteryInfo() {
         updateChargeInfo();
-        //updateLevelInfo();
       }
       updateAllBatteryInfo();
 
@@ -131,10 +130,12 @@ function update() {
   // update artoolkit on every frame
   if (arToolkitSource.ready !== false)
     arToolkitContext.update(arToolkitSource.domElement);
+  console.log(mesh1);
 }
 
 function render() {
   renderer.render(scene, camera);
+  console.log(mesh1);
 }
 
 function animate() {
