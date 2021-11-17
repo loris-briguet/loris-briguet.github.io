@@ -15,3 +15,10 @@
 + dynamic display
     - [SEM - website](loris-briguet.github.io/Ecal/s2/DynamicDisplay/website/index.html)
     - [SEM - PosterGenerator](https://loris-briguet.github.io/Ecal/s2/DynamicDisplay/software/index.html)
+
+
+
+
+
+[WorkshopS5](https://loris-briguet.github.io/workshopV1/index.html)
+
