@@ -2,7 +2,6 @@ var scene, camera, renderer, clock, deltaTime, totalTime;
 var arToolkitSource, arToolkitContext;
 var markerRoot1, markerRoot2;
 var mesh1;
-let markerControls1;
 
 initialize();
 animate();
@@ -103,10 +102,14 @@ function initialize() {
   // build markerControls
   markerRoot1 = new THREE.Group();
   scene.add(markerRoot1);
-  markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot1, {
-    type: "pattern",
-    patternUrl: "data/hiro.patt",
-  });
+  let markerControls1 = new THREEx.ArMarkerControls(
+    arToolkitContext,
+    markerRoot1,
+    {
+      type: "pattern",
+      patternUrl: "data/hiro.patt",
+    }
+  );
 
   let geometry1 = new THREE.CubeGeometry(1, 1, 1);
 
@@ -117,7 +120,7 @@ function initialize() {
   });
 
   mesh1 = new THREE.Mesh(geometry1, material1);
-  //console.log(mesh1);
+  console.log(mesh1);
   mesh1.position.y = 0.5;
 }
 
@@ -125,12 +128,7 @@ function update() {
   // update artoolkit on every frame
   if (arToolkitSource.ready !== false)
     arToolkitContext.update(arToolkitSource.domElement);
-  //console.log(scene);
-  let markerTransformation = [];
-  markerTransformation
-    .push
-    // arToolkitContext.getInstance().queryMarkerTransformation(markerRoot1)
-    ();
+  //sconsole.log(scene);
   console.log(arToolkitContext);
 }
 
