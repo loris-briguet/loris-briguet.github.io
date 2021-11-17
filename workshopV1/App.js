@@ -7,31 +7,6 @@ initialize();
 animate();
 
 function initialize() {
-  if (navigator.getBattery) {
-    navigator.getBattery().then(function (battery) {
-      function updateAllBatteryInfo() {
-        updateChargeInfo();
-      }
-      updateAllBatteryInfo();
-
-      battery.addEventListener("chargingchange", function () {
-        updateChargeInfo();
-      });
-      function updateChargeInfo() {
-        if (battery.charging == true) {
-          console.log("battery is charging");
-          //play audio
-          //check ar distance
-          //distance = volume
-        } else {
-          console.log("battery not charging");
-        }
-      }
-    });
-  } else {
-    console.log("battery not suported");
-  }
-
   scene = new THREE.Scene();
 
   let ambientLight = new THREE.AmbientLight(0xcccccc, 0.5);
@@ -112,7 +87,6 @@ function initialize() {
   );
 
   let geometry1 = new THREE.CubeGeometry(1, 1, 1);
-
   let material1 = new THREE.MeshNormalMaterial({
     transparent: true,
     opacity: 0.5,
@@ -120,7 +94,6 @@ function initialize() {
   });
 
   mesh1 = new THREE.Mesh(geometry1, material1);
-  console.log(mesh1);
   mesh1.position.y = 0.5;
 
   markerRoot1.add(mesh1);
@@ -128,8 +101,10 @@ function initialize() {
 
 function update() {
   // update artoolkit on every frame
-  if (arToolkitSource.ready !== false)
+  if (arToolkitSource.ready !== false) {
     arToolkitContext.update(arToolkitSource.domElement);
+  }
+
   console.log(arToolkitContext);
 }
 
@@ -143,4 +118,37 @@ function animate() {
   totalTime += deltaTime;
   update();
   render();
+}
+
+if (navigator.getBattery) {
+  navigator.getBattery().then(function (battery) {
+    function updateAllBatteryInfo() {
+      updateChargeInfo();
+      //updateLevelInfo();
+    }
+    updateAllBatteryInfo();
+
+    battery.addEventListener("chargingchange", function () {
+      updateChargeInfo();
+    });
+    function updateChargeInfo() {
+      if (battery.charging == true) {
+        console.log("battery is charging");
+        //play audio
+        //check ar distance
+        //distance = volume
+      } else {
+        console.log("battery not charging");
+      }
+    }
+
+    // battery.addEventListener("levelchange", function () {
+    //   updateLevelInfo();
+    // });
+    // function updateLevelInfo() {
+    //   console.log("Battery level: " + battery.level * 100 + "%");
+    // }
+  });
+} else {
+  console.log("battery not suported");
 }
