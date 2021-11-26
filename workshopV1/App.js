@@ -54,22 +54,15 @@ function setup() {
 function draw() {
   if (charging == true) {
     background(0);
-
-    //imgArray[batteryLevel].resize(width, height);
   } else {
     background(255, 0, 0);
     unpluggedImg;
     image(unpluggedImg, 0, 0, width, height);
   }
-  // translate(width / 2, height / 2);
-  // rotate(PI);
-  // imageMode(CENTER);
   image(imgArray[batteryLevel], 0, 0, width, height);
 }
 
 function touchStarted() {
   let myCanvas = document.getElementsByTagName("canvas");
   myCanvas[0].requestFullscreen();
-  console.log(charging);
-  //onsole.log(width, height);
 }
